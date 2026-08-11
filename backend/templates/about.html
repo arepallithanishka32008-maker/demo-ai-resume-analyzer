@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About - AI Resume Analyzer</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo-area">
+
+<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" width="60">
+
+<h1>AI Resume Analyzer</h1>
+
+</div>
+
+<nav>
+
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a href="/upload">Upload Resume</a>
+<a href="/contact">Contact</a>
+<a href="/login">Login</a>
+<a href="/register">Register</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h2>About AI Resume Analyzer</h2>
+
+<p>
+
+AI Resume Analyzer is a web application developed using
+<strong>HTML, CSS, JavaScript, Python and Flask.</strong>
+
+</p>
+
+<br>
+
+<p>
+
+It helps students and job seekers analyze resumes using AI by providing:
+
+</p>
+
+<ul style="font-size:20px;line-height:2;margin-left:25px;">
+
+<li>✅ ATS Score</li>
+<li>✅ Resume Skill Detection</li>
+<li>✅ Missing Skills Analysis</li>
+<li>✅ AI Suggestions</li>
+<li>✅ Interview Questions</li>
+
+</ul>
+
+<br>
+
+<p>
+
+Our goal is to help users create professional resumes and improve their chances of getting shortlisted.
+
+</p>
+
+</div>
+
+<div class="hero-image">
+
+<img src="{{ url_for('static', filename='images/hero.png') }}" alt="About Image" width="450">
+
+</div>
+
+</section>
+
+<section class="features">
+
+<h2>Technologies Used</h2>
+
+<div class="feature-container">
+
+<div class="box">
+
+<img src="{{ url_for('static', filename='images/resume.png') }}" width="60">
+
+<h3>HTML5</h3>
+
+<p>Structure of the website.</p>
+
+</div>
+
+<div class="box">
+
+<img src="{{ url_for('static', filename='images/upload.png') }}" width="60">
+
+<h3>CSS3</h3>
+
+<p>Responsive styling.</p>
+
+</div>
+
+<div class="box">
+
+<img src="{{ url_for('static', filename='images/ai.png') }}" width="60">
+
+<h3>JavaScript</h3>
+
+<p>Interactive pages.</p>
+
+</div>
+
+<div class="box">
+
+<img src="{{ url_for('static', filename='images/ai.png') }}" width="60">
+
+<h3>Python</h3>
+
+<p>Backend processing.</p>
+
+</div>
+
+<div class="box">
+
+<img src="{{ url_for('static', filename='images/upload.png') }}" width="60">
+
+<h3>Flask</h3>
+
+<p>Connects frontend and backend.</p>
+
+</div>
+
+<div class="box">
+
+<img src="{{ url_for('static', filename='images/resume.png') }}" width="60">
+
+<h3>SQLite</h3>
+
+<p>User database management.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 AI Resume Analyzer | Developed by Thanishka
+
+</p>
+
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

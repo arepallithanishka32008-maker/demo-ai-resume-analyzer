@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Upload Resume - AI Resume Analyzer</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo-area">
+
+<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" width="60">
+
+<h1>AI Resume Analyzer</h1>
+
+</div>
+
+<nav>
+
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a href="/upload">Upload Resume</a>
+<a href="/contact">Contact</a>
+<a href="/login">Login</a>
+<a href="/register">Register</a>
+
+</nav>
+
+</header>
+
+<section class="form-section">
+
+<div style="text-align:center;margin-bottom:20px;">
+
+<img src="{{ url_for('static', filename='images/upload.png') }}" alt="Upload Resume" width="120">
+
+</div>
+
+<h2 style="text-align:center;">Upload Your Resume</h2>
+
+<p style="text-align:center;margin-bottom:25px;">
+
+Upload your resume in <b>PDF</b> format and receive an ATS Score, Skills Analysis, AI Suggestions, and Interview Questions.
+
+</p>
+
+<form action="/upload" method="POST" enctype="multipart/form-data">
+
+<input
+type="file"
+name="resume"
+accept=".pdf"
+required>
+
+<br><br>
+
+<button type="submit">
+
+Analyze Resume
+
+</button>
+
+</form>
+
+</section>
+
+<section class="features">
+
+<h2>Why Analyze Your Resume?</h2>
+
+<div class="feature-container">
+
+<div class="box">
+
+<img src="{{ url_for('static', filename='images/upload.png') }}" width="60">
+
+<h3>ATS Score</h3>
+
+<p>Know how ATS-friendly your resume is.</p>
+
+</div>
+
+<div class="box">
+
+<img src="{{ url_for('static', filename='images/ai.png') }}" width="60">
+
+<h3>Skills Detection</h3>
+
+<p>Identify technical and soft skills automatically.</p>
+
+</div>
+
+<div class="box">
+
+<img src="{{ url_for('static', filename='images/resume.png') }}" width="60">
+
+<h3>AI Suggestions</h3>
+
+<p>Receive personalized recommendations to improve your resume.</p>
+
+</div>
+
+<div class="box">
+
+<img src="{{ url_for('static', filename='images/hero.png') }}" width="60">
+
+<h3>Interview Questions</h3>
+
+<p>Practice AI-generated interview questions.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 AI Resume Analyzer | Developed by Thanishka
+
+</p>
+
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact - AI Resume Analyzer</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo-area">
+
+<img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" width="60">
+
+<h1>AI Resume Analyzer</h1>
+
+</div>
+
+<nav>
+
+<a href="/">Home</a>
+<a href="/about">About</a>
+<a href="/upload">Upload Resume</a>
+<a href="/contact">Contact</a>
+<a href="/login">Login</a>
+<a href="/register">Register</a>
+
+</nav>
+
+</header>
+
+<section class="form-section">
+
+<div style="text-align:center;margin-bottom:20px;">
+
+<img src="{{ url_for('static', filename='images/hero.png') }}" alt="Contact" width="250">
+
+</div>
+
+<h2 style="text-align:center;">Contact Us</h2>
+
+<p style="text-align:center;margin-bottom:30px;">
+
+Have any questions or suggestions? We'd love to hear from you.
+
+</p>
+
+<form>
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Your Email"
+required>
+
+<input
+type="tel"
+placeholder="Your Mobile Number"
+required>
+
+<textarea
+rows="6"
+placeholder="Write your message here..."
+required></textarea>
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+</form>
+
+<br>
+
+<div style="text-align:center;line-height:2;">
+
+<h3>📞 Contact Information</h3>
+
+<p><strong>Phone:</strong> 7997872871</p>
+
+<p><strong>Email:</strong> arepalliravi003@gmail.com</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 AI Resume Analyzer | Developed by Thanishka
+
+</p>
+
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
